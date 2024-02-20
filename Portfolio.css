@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
 h1, h2, h3, h4 {
 	display: inline;
 	color: #729fcf;
+	font-size: 20px;
 }
 
 .year {
@@ -10,22 +15,28 @@ h1, h2, h3, h4 {
 
 
 body {
-		font-family: 'Calibri' , sans-serif;
-		color: #b175c7;
-		background-color: #262626;
+	overflow: hidden;
+	font-size: 18px;
+	font-family: 'Poppins', sans-serif;
+	color: #b175c7;
+	background-color: #262626;
 } 
 
 
 .headh1 {
-	width: 1111px;
+	width: 1350px;
 }
 
 li {
-	color: green;
+	color: cyan;
 }
 
 #headimg {
 	border-radius: 50%; 
 	width: 150px; 
 	height: auto;
+}
+
+.skills {
+	transform: translate(750px, -520px);
 }
