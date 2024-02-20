@@ -1,0 +1,31 @@
+h1, h2, h3, h4 {
+	display: inline;
+	color: #729fcf;
+}
+
+.year {
+	display: inline;
+	color: cyan;
+}
+
+
+body {
+		font-family: 'Calibri' , sans-serif;
+		color: #b175c7;
+		background-color: #262626;
+} 
+
+
+.headh1 {
+	width: 1111px;
+}
+
+li {
+	color: green;
+}
+
+#headimg {
+	border-radius: 50%; 
+	width: 150px; 
+	height: auto;
+}
