@@ -1,1 +1,3 @@
-Portfolio Website for NEXUS Digital VJTI.
+#Portfolio
+
+Simple one-page portfolio website. 

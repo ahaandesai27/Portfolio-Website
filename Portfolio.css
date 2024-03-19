@@ -1,21 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+:root {
+	--light-green: #1bf38a;
+}
 /*Element selectors*/
+
 h1, h2, h3, h4{
 	display: inline;
-	color: #2418c8;
+	color: var(--light-green);
 	font-size: 20px;
 }
+
 
 h2 {
 	font-size: 25px;
 }
 
 body {
+	margin: 0px;
 	font-size: 18px;
 	font-family: 'Poppins', sans-serif;
-	color: #b175c7;
-	background-image: linear-gradient(45deg, #258ff1 0%, #7228cd 100%);
+	background: #0f0c29; 
+	background: -webkit-linear-gradient(to right, #24243e, #302b63);  
+	background: linear-gradient(to right, #24243e, #302b63); 
 }
 
 li {
@@ -54,3 +61,13 @@ li {
 	color: cyan;
 }
 
+.links li {
+	color: var(--light-green);
+}
+.links li a:visited {
+	color: rgba(29, 177, 83, 0.436);
+}
+
+.hobbies li {
+	color:rgb(137, 244, 176);
+}
