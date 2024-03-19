@@ -4,25 +4,26 @@
 	--light-green: #1bf38a;
 }
 /*Element selectors*/
-
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	margin-top: 10px;
+	margin-left: 2vw;
+	font-size: 18px;
+	font-family: 'Poppins', sans-serif;
+	background: #0f0c29; 
+	background: -webkit-linear-gradient(to right, #24243e, #302b63); 
+	background: linear-gradient(to right, #24243e, #302b63);  
+}
 h1, h2, h3, h4{
 	display: inline;
 	color: var(--light-green);
 	font-size: 20px;
 }
-
-
 h2 {
 	font-size: 25px;
-}
-
-body {
-	margin: 0px;
-	font-size: 18px;
-	font-family: 'Poppins', sans-serif;
-	background: #0f0c29; 
-	background: -webkit-linear-gradient(to right, #24243e, #302b63);  
-	background: linear-gradient(to right, #24243e, #302b63); 
 }
 
 li {
