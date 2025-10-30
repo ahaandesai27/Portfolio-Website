@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ahaan Desai • Portfolio</title>
+  <meta name="description" content="Portfolio of Ahaan Desai — projects, skills, education, and extracurriculars." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Asimovian&family=Cossette+Titre:wght@400;700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lobster&family=Orbitron:wght@400..900&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.net.min.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ["Cossette Titre", "Exo 2", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Noto Sans", "sans-serif"],
+            sans: ["Exo 2", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Noto Sans", "sans-serif"],
+          },
+          colors: {
+            brand: {
+              50: "#ebf5ff",
+              100: "#d7eaff",
+              200: "#afd4ff",
+              300: "#86bdff",
+              400: "#5ea7ff",
+              500: "#368fff",
+              600: "#1b73e6",
+              700: "#165bb4",
+              800: "#104282",
+              900: "#0a2a51",
+              950: "#061a33",
+            },
+          },
+          boxShadow: {
+            focus: "0 0 0 4px rgba(54, 143, 255, 0.35)",
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    :root {
+      color-scheme: light dark;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .motion-safe\:transition-none {
+        transition: none !important;
+      }
+    }
+
+    .font-asimovian {
+      font-family: 'Asimovian', sans-serif;
+    }
+
+    .lobster-regular {
+      font-family: "Lobster", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+
+    .orbitron {
+      font-family: "Orbitron", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+
+    body {
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body class="font-sans text-slate-200 bg-[#0d0b0b] selection:bg-brand-200 selection:text-slate-900">
+  <a href="#main"
+    class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:bg-white focus:text-slate-900 focus:px-4 focus:py-2 focus:rounded-md focus:shadow-focus">Skip
+    to content</a>
+
+  <header class="sticky top-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-[#0d0b0b]/70 bg-[#0d0b0b] shadow-sm/50">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between py-4">
+        <a href="#" class="flex items-center gap-2" aria-label="Homepage">
+          <span class="text-[#00ffff] text-3xl font-bold tracking-tight font-display orbitron">Ahaan Desai</span>
+        </a>
+        <nav aria-label="Primary" class="hidden md:block">
+          <ul class="flex items-center gap-6">
+            <li><a class="text-slate-300 hover:text-white focus:outline-none focus-visible:shadow-focus rounded"
+                href="#core-skills">Technical Skills</a></li>
+            <li><a class="text-slate-300 hover:text-white focus:outline-none focus-visible:shadow-focus rounded"
+                href="#projects">Projects</a></li>
+            <li><a class="text-slate-300 hover:text-white focus:outline-none focus-visible:shadow-focus rounded"
+                href="#education">Education</a></li>
+            <li><a class="text-slate-300 hover:text-white focus:outline-none focus-visible:shadow-focus rounded"
+                href="#extracurriculars">Extracurriculars</a></li>
+            <li><a class="text-slate-300 hover:text-white focus:outline-none focus-visible:shadow-focus rounded"
+                href="social.html">Social Profiles</a></li>
+            <li><a class="text-slate-300 hover:text-white focus:outline-none focus-visible:shadow-focus rounded"
+                href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="md:hidden">
+          <button type="button"
+            class="p-2 rounded-md text-white hover:text-brand-700 focus:outline-none focus-visible:shadow-focus"
+            aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false"
+            onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+              <path d="M4 6h16M4 12h16M4 18h16" stroke="white" stroke-width="2" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden border-t border-slate-800 bg-[#0d0b0b]">
+      <nav aria-label="Mobile" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-2">
+        <ul class="grid gap-2">
+          <li><a
+              class="block px-2 py-2 rounded text-slate-300 hover:bg-white/5 hover:text-white focus:outline-none focus-visible:shadow-focus"
+              href="#core-skills">Technical Skills</a></li>
+          <li><a
+              class="block px-2 py-2 rounded text-slate-300 hover:bg-white/5 hover:text-white focus:outline-none focus-visible:shadow-focus"
+              href="#projects">Projects</a></li>
+          <li><a
+              class="block px-2 py-2 rounded text-slate-300 hover:bg-white/5 hover:text-white focus:outline-none focus-visible:shadow-focus"
+              href="#education">Education</a></li>
+          <li><a
+              class="block px-2 py-2 rounded text-slate-300 hover:bg-white/5 hover:text-white focus:outline-none focus-visible:shadow-focus"
+              href="#extracurriculars">Extracurriculars</a></li>
+          <li><a
+              class="block px-2 py-2 rounded text-slate-300 hover:bg-white/5 hover:text-white focus:outline-none focus-visible:shadow-focus"
+              href="social.html">Social Profiles</a></li>
+          <li><a
+              class="block px-2 py-2 rounded text-slate-300 hover:bg-white/5 hover:text-white focus:outline-none focus-visible:shadow-focus"
+              href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Cyan Glowing Divider -->
+  <!-- <div class="w-full h-px bg-cyan-400 opacity-80 shadow-[0_0_25px_rgba(34,211,238,0.8)] my-8"></div> -->
+
+  <div id="main">
+    <!-- Hero -->
+    <section class="relative overflow-hidden bg-black/20 border border-white/10 rounded-3xl">
+     
+      <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+        <div class="flex flex-col items-center text-center gap-6">
+
+          <!-- Info -->
+          <div>
+            <h1 class="font-display text-4xl md:text-5xl font-bold tracking-tight text-white">Ahaan Desai</h1>
+            <p class="mt-3 text-xl text-white max-w-prose mx-auto">
+              Hi, I’m Ahaan Desai, a Fullstack Web Developer and Computer Engineering student at VJTI, Mumbai. I build
+              web applications using the MERN stack, with a preference for backend development.
+            </p>
+          </div>
+
+          <!-- Buttons -->
+          <div class="mt-6 flex flex-wrap justify-center gap-3">
+            <a href="#projects"
+              class="inline-flex items-center gap-2 rounded-md bg-[#00ffff] px-4 py-2 text-black hover:bg-cyan-400 focus:outline-none focus-visible:shadow-focus">
+              View Projects
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                <path d="M13 7l5 5-5 5M19 12H6" />
+              </svg>
+            </a>
+            <a href="AhaanDesaiResume.pdf"
+              class="inline-flex items-center gap-2 rounded-md border border-gray-300 bg-white px-4 py-2 text-black hover:bg-gray-100 focus:outline-none focus-visible:shadow-focus">
+              Download Resume
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <!-- Cyan Glowing Divider -->
+  <!-- <div class="w-full h-px bg-cyan-400 opacity-80 shadow-[0_0_25px_rgba(34,211,238,0.8)] my-8"></div> -->
+
+  <!-- Core Skills (icons grid) -->
+  <section id="core-skills" aria-labelledby="core-skills-title" class="py-16 md:py-24">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <h2 id="core-skills-title" class="font-display text-3xl md:text-4xl font-bold text-white">Technical Skills</h2>
+      <p class="mt-2 text-slate-400">A quick snapshot of my day-to-day toolbox.</p>
+      <div class="mt-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+
+        <div class="group rounded-xl border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors">
+          <img alt="Python" class="mx-auto h-10" src="https://skillicons.dev/icons?i=python" />
+          <div class="flex justify-center pt-2">
+            <p class="font-asimovian">Python</p>
+          </div>
+        </div>
+
+        <div class="group rounded-xl border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors">
+          <img alt="C++" class="mx-auto h-10" src="https://skillicons.dev/icons?i=cpp" />
+          <div class="flex justify-center pt-2">
+            <p class="font-asimovian">C++</p>
+          </div>
+        </div>
+
+        <div class="group rounded-xl border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors">
+          <img alt="JavaScript" class="mx-auto h-10" src="https://skillicons.dev/icons?i=js" />
+          <div class="flex justify-center pt-2">
+            <p class="font-asimovian">JavaScript</p>
+          </div>
+        </div>
+
+        <div class="group rounded-xl border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors">
+          <img alt="React" class="mx-auto h-10" src="https://skillicons.dev/icons?i=react" />
+          <div class="flex justify-center pt-2">
+            <p class="font-asimovian">React</p>
+          </div>
+        </div>
+
+        <div class="group rounded-xl border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors">
+          <img alt="Node.js" class="mx-auto h-10" src="https://skillicons.dev/icons?i=nodejs" />
+          <div class="flex justify-center pt-2">
+            <p class="font-asimovian">NodeJS</p>
+          </div>
+        </div>
+
+        <div class="group rounded-xl border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors">
+          <img alt="Express" class="mx-auto h-10" src="https://skillicons.dev/icons?i=express" />
+          <div class="flex justify-center pt-2">
+            <p class="font-asimovian">Express</p>
+          </div>
+        </div>
+
+        <div class="group rounded-xl border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors">
+          <img alt="GraphQL" class="mx-auto h-10" src="https://skillicons.dev/icons?i=graphql" />
+          <div class="flex justify-center pt-2">
+            <p class="font-asimovian">GraphQL</p>
+          </div>
+        </div>
+
+        <div class="group rounded-xl border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors">
+          <img alt="MongoDB" class="mx-auto h-10" src="https://skillicons.dev/icons?i=mongodb" />
+          <div class="flex justify-center pt-2">
+            <p class="font-asimovian">MongoDB</p>
+          </div>
+        </div>
+
+        <div class="group rounded-xl border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors">
+          <img alt="MySQL" class="mx-auto h-10" src="https://skillicons.dev/icons?i=mysql" />
+          <div class="flex justify-center pt-2">
+            <p class="font-asimovian">MySQL</p>
+          </div>
+        </div>
+
+        <div class="group rounded-xl border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors">
+          <img alt="Docker" class="mx-auto h-10" src="https://skillicons.dev/icons?i=docker" />
+          <div class="flex justify-center pt-2">
+            <p class="font-asimovian">Docker</p>
+          </div>
+        </div>
+
+        <div class="group rounded-xl border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors">
+          <img alt="Git" class="mx-auto h-10" src="https://skillicons.dev/icons?i=git" />
+          <div class="flex justify-center pt-2">
+            <p class="font-asimovian">Git</p>
+          </div>
+        </div>
+
+        <div class="group rounded-xl border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors">
+          <img alt="Tailwind" class="mx-auto h-10" src="https://skillicons.dev/icons?i=tailwind" />
+          <div class="flex justify-center pt-2">
+            <p class="font-asimovian">Tailwind</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" aria-labelledby="projects-title" class="py-8">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex items-end justify-between gap-4">
+        <h2 id="projects-title" class="font-display text-3xl md:text-4xl font-bold text-white">Projects</h2>
+      </div>
+
+      <div class="mt-10 space-y-6">
+        <!-- Recipe App -->
+        <article
+          class="group rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 transition-colors motion-safe:transition-shadow shadow-sm hover:shadow-md">
+          <div class="p-6">
+            <div class="flex items-center gap-2 text-xs text-brand-300">
+              <span class="inline-flex items-center rounded-full bg-white/10 px-2 py-0.5 text-white">Oct 2024 – Jan
+                2025</span>
+            </div>
+            <div class="mt-3 text-2xl font-semibold text-white">Recipe App</div>
+            <p class="mt-2 text-slate-300">Led a team of 4 in CoC VJTI. Built REST APIs with Express.js & MongoDB for
+              5,000+ recipes, full‑text search & autocomplete, real‑time price scraping with Puppeteer and Redis
+              caching. Fine‑tuned MiniLM for personalized recommendations.</p>
+            <ul class="mt-3 flex flex-wrap gap-2 text-xs text-slate-300">
+              <li class="rounded bg-white/10 border border-white/10 px-2 py-1">Express.js</li>
+              <li class="rounded bg-white/10 border border-white/10 px-2 py-1">MongoDB Atlas</li>
+              <li class="rounded bg-white/10 border border-white/10 px-2 py-1">Puppeteer</li>
+              <li class="rounded bg-white/10 border border-white/10 px-2 py-1">Redis</li>
+              <li class="rounded bg-white/10 border border-white/10 px-2 py-1">Sentence-Transformers</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Actor Hiring Management System -->
+        <article
+          class="group rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 transition-colors motion-safe:transition-shadow shadow-sm hover:shadow-md">
+          <div class="p-6">
+            <div class="flex items-center gap-2 text-xs text-brand-300">
+              <span class="inline-flex items-center rounded-full bg-white/10 px-2 py-0.5 text-white">Feb 2025 – Jun
+                2025</span>
+            </div>
+            <h3 class="mt-3 text-2xl font-semibold text-white">Actor Hiring Management System</h3>
+            <p class="mt-2 text-slate-300">Comprehensive hiring and social platform for film industry professionals
+              using React, Node, Express and Sequelize with MariaDB. AI‑powered profile autofill and post generation, S3
+              + CloudFront for audition uploads, Gemini‑based audition analysis, real‑time chat via Firebase.</p>
+            <ul class="mt-3 flex flex-wrap gap-2 text-xs text-slate-300">
+              <li class="rounded bg-white/10 border border-white/10 px-2 py-1">React</li>
+              <li class="rounded bg-white/10 border border-white/10 px-2 py-1">Node & Express</li>
+              <li class="rounded bg-white/10 border border-white/10 px-2 py-1">Sequelize</li>
+              <li class="rounded bg-white/10 border border-white/10 px-2 py-1">MariaDB</li>
+              <li class="rounded bg-white/10 border border-white/10 px-2 py-1">AWS S3 + CloudFront</li>
+              <li class="rounded bg-white/10 border border-white/10 px-2 py-1">Firebase Realtime DB</li>
+              <li class="rounded bg-white/10 border border-white/10 px-2 py-1">Google Gemini</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Video Game Store -->
+        <article
+          class="group rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 transition-colors motion-safe:transition-shadow shadow-sm hover:shadow-md md:col-span-2">
+          <div class="p-6">
+            <div class="flex items-center gap-2 text-xs text-brand-300">
+              <span class="inline-flex items-center rounded-full bg-white/10 px-2 py-0.5 text-white">Jul 2024 – Dec
+                2024</span>
+            </div>
+            <h3 class="mt-3 text-2xl font-semibold text-white">Video Game Store</h3>
+            <p class="mt-2 text-slate-300">eCommerce for video games using React, Node, GraphQL & MongoDB. Implemented
+              search, filtering, ratings & reviews, PayPal checkout, cart & library, and category‑based recommendations.
+            </p>
+            <ul class="mt-3 flex flex-wrap gap-2 text-xs text-slate-300">
+              <li class="rounded bg-white/10 border border-white/10 px-2 py-1">React</li>
+              <li class="rounded bg-white/10 border border-white/10 px-2 py-1">GraphQL</li>
+              <li class="rounded bg-white/10 border border-white/10 px-2 py-1">MongoDB</li>
+              <li class="rounded bg-white/10 border border-white/10 px-2 py-1">PayPal</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Education -->
+  <section id="education" aria-labelledby="education-title" class="py-8">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <h2 id="education-title" class="font-display text-3xl md:text-4xl font-bold text-white">Education</h2>
+      <div class="mt-6 grid gap-6">
+        <article class="rounded-xl border border-white/10 bg-white/5 p-6">
+          <div class="flex flex-wrap items-baseline justify-between gap-2">
+            <h3 class="text-2xl font-semibold text-white">Veermata Jijabai Technological Institute (VJTI), Mumbai</h3>
+            <p class="text-lg text-slate-300">Expected Graduation: 2027</p>
+          </div>
+          <p class="mt-1 text-slate-300">Bachelor of Technology in Computer Engineering • CGPA: 9.16</p>
+          <p class="mt-3 text-slate-300"><span class="font-medium text-white">Relevant Coursework:</span> Data
+            Structures, Algorithms, Operating Systems, DBMS, Software Engineering, Object‑Oriented Programming.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Extracurriculars -->
+  <section id="extracurriculars" aria-labelledby="extracurriculars-title" class="py-8">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <h2 id="extracurriculars-title" class="font-display text-3xl md:text-4xl font-bold text-white">Extracurriculars
+      </h2>
+      <div class="mt-8 grid gap-6 md:grid-cols-2">
+        <article class="rounded-xl border border-white/10 bg-white/5 p-6">
+          <div class="flex items-center justify-between">
+            <h3 class="text-xl font-semibold text-white">Competitive Programming Club, VJTI</h3>
+            <span class="text-sm text-brand-300">Oct 2024 – Present</span>
+          </div>
+          <ul class="mt-3 list-disc pl-5 text-slate-300">
+            <li>Ranked 19/63 in offline selection round.</li>
+            <li>Active in weekly contests to improve algorithmic thinking.</li>
+          </ul>
+        </article>
+        <article class="rounded-xl border border-white/10 bg-white/5 p-6">
+          <div class="flex items-center justify-between">
+            <h3 class="text-xl font-semibold text-white">Debate and Literary Arts Society, VJTI</h3>
+            <span class="text-sm text-brand-300">Oct 2024 – May 2025</span>
+          </div>
+          <ul class="mt-3 list-disc pl-5 text-slate-300">
+            <li>Managed videography and editing for events and competitions.</li>
+            <li>Supported event planning, decoration, and technical setup.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" aria-labelledby="contact-title" class="py-16">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <h2 id="contact-title" class="font-display text-3xl md:text-4xl font-bold text-white">Get in touch</h2>
+      <p class="mt-3 text-slate-300 max-w-prose">Open for work, freelance and collaborations. Feel free to reach out.
+      </p>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a href="mailto:desaiahaanr@gmail.com"
+          class="inline-flex items-center gap-2 rounded-md bg-[#00ffff] px-4 py-2 text-black hover:bg-brand-600 focus:outline-none focus-visible:shadow-focus">Email</a>
+        <a href="https://www.github.com/ahaandesai27"
+          class="inline-flex items-center gap-2 rounded-md border border-white/10 bg-white/5 px-4 py-2 text-white hover:bg-white/10 focus:outline-none focus-visible:shadow-focus">GitHub</a>
+        <a href="https://www.linkedin.com/in/ahaan-desai"
+          class="inline-flex items-center gap-2 rounded-md border border-white/10 bg-white/5 px-4 py-2 text-white hover:bg-white/10 focus:outline-none focus-visible:shadow-focus">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <footer class="border-t border-white/10 bg-transparent">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 text-sm text-slate-400">
+      <p>&copy; <span id="year"></span> Ahaan Desai. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script>
+    VANTA.NET({
+      el: "#main",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: true,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x3f79ff,
+      backgroundColor: 0x0
+    })
+  </script>
+</body>
+
+</html>
