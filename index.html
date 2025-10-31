@@ -1,47 +1,36 @@
-<!doctype html>
-<html lang="en">
-
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ahaan Desai • Portfolio</title>
   <meta name="description" content="Portfolio of Ahaan Desai — projects, skills, education, and extracurriculars." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Asimovian&family=Cossette+Titre:wght@400;700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lobster&family=Orbitron:wght@400..900&display=swap"
-    rel="stylesheet">
+
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.net.min.js"></script>
+
   <script>
     tailwind.config = {
       theme: {
         extend: {
           fontFamily: {
             display: [
-              "Cossette Titre",
-              "Exo 2",
-              "Calibri",
               "system-ui",
               "-apple-system",
+              "BlinkMacSystemFont",
               "Segoe UI",
               "Roboto",
-              "Ubuntu",
-              "Cantarell",
-              "Noto Sans",
+              "Helvetica Neue",
+              "Arial",
               "sans-serif"
             ],
             sans: [
-              "Exo 2",
-              "Calibri",
               "system-ui",
               "-apple-system",
+              "BlinkMacSystemFont",
               "Segoe UI",
               "Roboto",
-              "Ubuntu",
-              "Cantarell",
-              "Noto Sans",
+              "Helvetica Neue",
+              "Arial",
               "sans-serif"
             ],
           },
@@ -67,48 +56,32 @@
       },
     };
   </script>
-  <style>
-    :root {
-      color-scheme: light dark;
-    }
+</head>
+<style>
+  :root {
+    color-scheme: light dark;
+  }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
     html {
-      scroll-behavior: smooth;
+      scroll-behavior: auto;
     }
 
-    @media (prefers-reduced-motion: reduce) {
-      html {
-        scroll-behavior: auto;
-      }
-
-      .motion-safe\:transition-none {
-        transition: none !important;
-      }
+    .motion-safe\:transition-none {
+      transition: none !important;
     }
+  }
 
-    .font-asimovian {
-      font-family: 'Asimovian', sans-serif;
-    }
-
-    .lobster-regular {
-      font-family: "Lobster", sans-serif;
-      font-weight: 400;
-      font-style: normal;
-    }
-
-
-    .orbitron {
-      font-family: "Orbitron", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: 400;
-      font-style: normal;
-    }
-
-
-    body {
-      font-size: 20px;
-    }
-  </style>
+  /* Modern system font stack - works across all browsers */
+  body {
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+</style>
 </head>
 
 <body class="font-sans text-slate-200 bg-[#0d0b0b] selection:bg-brand-200 selection:text-slate-900">
@@ -120,7 +93,7 @@
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between py-4">
         <a href="#" class="flex items-center gap-2" aria-label="Homepage">
-          <span class="text-[#00ffff] text-3xl font-bold tracking-tight font-display orbitron">Ahaan Desai</span>
+          <span class="text-[#00ffff] text-3xl font-bold tracking-tight font-display">Ahaan Desai</span>
         </a>
         <nav aria-label="Primary" class="hidden md:block">
           <ul class="flex items-center gap-6">
@@ -182,7 +155,7 @@
   <div id="main">
     <!-- Hero -->
     <section class="relative overflow-hidden bg-black/20 border border-white/10 rounded-3xl">
-     
+
       <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-16 md:py-24">
         <div class="flex flex-col items-center text-center gap-6">
 
@@ -229,84 +202,84 @@
         <div class="group rounded-xl border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors">
           <img alt="Python" class="mx-auto h-10" src="public/assets/icons/python.svg" />
           <div class="flex justify-center pt-2">
-            <p class="font-asimovian">Python</p>
+            <p class="text-white font-medium">Python</p>
           </div>
         </div>
 
         <div class="group rounded-xl border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors">
           <img alt="C++" class="mx-auto h-10" src="public/assets/icons/cpp.svg" />
           <div class="flex justify-center pt-2">
-            <p class="font-asimovian">C++</p>
+            <p class="text-white font-medium">C++</p>
           </div>
         </div>
 
         <div class="group rounded-xl border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors">
           <img alt="JavaScript" class="mx-auto h-10" src="public/assets/icons/js.svg" />
           <div class="flex justify-center pt-2">
-            <p class="font-asimovian">JavaScript</p>
+            <p class="text-white font-medium">JavaScript</p>
           </div>
         </div>
 
         <div class="group rounded-xl border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors">
           <img alt="React" class="mx-auto h-10" src="public/assets/icons/react.svg" />
           <div class="flex justify-center pt-2">
-            <p class="font-asimovian">React</p>
+            <p class="text-white font-medium">React</p>
           </div>
         </div>
 
         <div class="group rounded-xl border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors">
           <img alt="Node.js" class="mx-auto h-10" src="public/assets/icons/nodejs.svg" />
           <div class="flex justify-center pt-2">
-            <p class="font-asimovian">NodeJS</p>
+            <p class="text-white font-medium">NodeJS</p>
           </div>
         </div>
 
         <div class="group rounded-xl border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors">
           <img alt="Express" class="mx-auto h-10" src="public/assets/icons/express.svg" />
           <div class="flex justify-center pt-2">
-            <p class="font-asimovian">Express</p>
+            <p class="text-white font-medium">Express</p>
           </div>
         </div>
 
         <div class="group rounded-xl border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors">
           <img alt="GraphQL" class="mx-auto h-10" src="public/assets/icons/graphql.svg" />
           <div class="flex justify-center pt-2">
-            <p class="font-asimovian">GraphQL</p>
+            <p class="text-white font-medium">GraphQL</p>
           </div>
         </div>
 
         <div class="group rounded-xl border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors">
           <img alt="MongoDB" class="mx-auto h-10" src="public/assets/icons/mongodb.svg" />
           <div class="flex justify-center pt-2">
-            <p class="font-asimovian">MongoDB</p>
+            <p class="text-white font-medium">MongoDB</p>
           </div>
         </div>
 
         <div class="group rounded-xl border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors">
           <img alt="MySQL" class="mx-auto h-10" src="public/assets/icons/mysql.svg" />
           <div class="flex justify-center pt-2">
-            <p class="font-asimovian">MySQL</p>
+            <p class="text-white font-medium">MySQL</p>
           </div>
         </div>
 
         <div class="group rounded-xl border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors">
           <img alt="Docker" class="mx-auto h-10" src="public/assets/icons/docker.svg" />
           <div class="flex justify-center pt-2">
-            <p class="font-asimovian">Docker</p>
+            <p class="text-white font-medium">Docker</p>
           </div>
         </div>
 
         <div class="group rounded-xl border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors">
           <img alt="Git" class="mx-auto h-10" src="public/assets/icons/git.svg" />
           <div class="flex justify-center pt-2">
-            <p class="font-asimovian">Git</p>
+            <p class="text-white font-medium">Git</p>
           </div>
         </div>
 
         <div class="group rounded-xl border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors">
           <img alt="Tailwind" class="mx-auto h-10" src="public/assets/icons/tailwind.svg" />
           <div class="flex justify-center pt-2">
-            <p class="font-asimovian">Tailwind</p>
+            <p class="text-white font-medium">Tailwind</p>
           </div>
         </div>
 
